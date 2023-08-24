@@ -1,9 +1,9 @@
 import unittest
 
-from src.component import constants, water_facade
+from src.component import constants, water_calculator
 
 
-class WaterFacadeTest(unittest.TestCase):
+class WaterCalculatorTest(unittest.TestCase):
     def test_calculate_200_molecules(self):
         # given
         milliliters = 200
@@ -18,7 +18,7 @@ class WaterFacadeTest(unittest.TestCase):
         # 200 / 18.015 * 6.02e+23 = 11.101859561476547 * 6.02e+23 = 6.683319456008883e24 ~ 6.7e24 molecules
 
         # when
-        result = water_facade.calculate_molecules(milliliters)
+        result = water_calculator.calculate_molecules(milliliters)
         # {'grams': 200, 'molecules': 6.683319456008881e+24, 'moles': 11.101859561476546}
 
         # then

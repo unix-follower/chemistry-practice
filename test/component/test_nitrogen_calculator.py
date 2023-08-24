@@ -1,10 +1,9 @@
 import unittest
 
-import src.component.nitrogen_facade as nitrogen_facade
-from src.component import constants
+from src.component import constants, nitrogen_calculator
 
 
-class NitrogenFacadeTest(unittest.TestCase):
+class NitrogenCalculatorTest(unittest.TestCase):
     def test_calculate_mass_of_2_molecules_of_N(self):
         # given
         n_molecules = 2
@@ -14,7 +13,7 @@ class NitrogenFacadeTest(unittest.TestCase):
         # N molecules = 14.007 * 3.322259136212625e-24 = 4.65348837209302e-23 ~ 4.65e-23 grams
 
         # when
-        result = nitrogen_facade.calculate_mass(n_molecules)
+        result = nitrogen_calculator.calculate_mass(n_molecules)
         # {'grams': 4.6534883720930234e-23, 'molecules': 2, 'moles': 3.322259136212625e-24}
 
         # then
@@ -45,7 +44,7 @@ class NitrogenFacadeTest(unittest.TestCase):
         # N atoms = N 2 mole * Avogadro = 1.8733218158732803 * 6.02e+23 = 1.1277397331557148e+24
 
         # when
-        result = nitrogen_facade.calculate_ammonium_compound_atoms(total_grams, nitrogen_fraction)
+        result = nitrogen_calculator.calculate_ammonium_compound_atoms(total_grams, nitrogen_fraction)
         # {
         # 'grams': 90.0,
         # 'molecules': 5.638698665778574e+23,
@@ -84,7 +83,7 @@ class NitrogenFacadeTest(unittest.TestCase):
         # N atoms = N 2 mole * Avogadro = 0.5994405221792993 * 6.02e+23 = 3.608631943519382e+23
 
         # when
-        result = nitrogen_facade.calculate_urea_compound_atoms(total_grams, nitrogen_fraction)
+        result = nitrogen_calculator.calculate_urea_compound_atoms(total_grams, nitrogen_fraction)
         # {
         # 'grams': 18.0,
         # 'molecules': 1.804315971759691e+23,
