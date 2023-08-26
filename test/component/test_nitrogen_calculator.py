@@ -69,7 +69,7 @@ class NitrogenCalculatorTest(unittest.TestCase):
         total_grams = 20
         nitrogen_fraction = 0.9  # 90%
 
-        # (NH2)2CO grams = total grams * nitrogen fraction = 20 * 0.9 = 18
+        # (NH₂)2CO grams = total grams * nitrogen fraction = 20 * 0.9 = 18
         # N molar mass = 14.007
         # H molar mass = 1.008
         # C molar mass = 12.011
