@@ -15,7 +15,7 @@ class WaterCalculatorTest(unittest.TestCase):
         # O molar mass = 15.999
         # H₂O molar mass = 1.008 + 1.008 + 15.999 = 18.015
         # molecules = grams / molar mass * Avogadro
-        # 200 / 18.015 * 6.02e+23 = 11.101859561476547 * 6.02e+23 = 6.683319456008883e24 ~ 6.7e24 molecules
+        # 200 / 18.015 * 6.02e+23 = 11.101859561476547 * 6.02e+23 = 6.683319456008883e24 ~ 6.7e+24 molecules
 
         # when
         result = water_calculator.calculate_molecules(milliliters)

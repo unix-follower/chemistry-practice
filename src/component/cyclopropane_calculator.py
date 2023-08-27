@@ -8,7 +8,7 @@ logger = get_logger()
 
 def air_volume_combustion_with_propene(compound_volume: float):
     """
-    Calculates the volume of air (in liters) to combustion the mix of cyclopropane and propene.
+    Calculate the volume of air (in liters) to combustion the mix of cyclopropane and propene.
     """
 
     compound_formula = "C₃H₆"
