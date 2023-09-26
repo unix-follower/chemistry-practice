@@ -1,3 +1,12 @@
+### Install dependencies
+```shell
+pipenv install
+```
+### Start application
+```shell
+python manage.py runserver
+```
+### Test API
 ```shell
 port=8000
 ```
